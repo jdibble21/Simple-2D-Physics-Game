@@ -18,6 +18,7 @@ animations = [ {
 [node name="Player" type="RigidBody2D"]
 position = Vector2( 5.05109, 0.698685 )
 scale = Vector2( 5, 5 )
+gravity_scale = 1.5
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true

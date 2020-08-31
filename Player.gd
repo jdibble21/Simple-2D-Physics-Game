@@ -15,3 +15,4 @@ func _integrate_forces(state):
 
 func _on_Player_sleeping_state_changed():
 	$AnimatedSprite.play("moving")
+	
