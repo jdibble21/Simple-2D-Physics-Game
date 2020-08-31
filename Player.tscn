@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://kenny_sport_assets/PNG/Equipment/ball_basket1.png" type="Texture" id=1]
 [ext_resource path="res://kenny_sport_assets/PNG/Equipment/ball_basket2.png" type="Texture" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 9.73746
+radius = 3.20318
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -15,11 +16,14 @@ animations = [ {
 } ]
 
 [node name="Player" type="RigidBody2D"]
+scale = Vector2( 5, 5 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 3, 3 )
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
