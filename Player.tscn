@@ -5,17 +5,18 @@
 [ext_resource path="res://Player.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 3.20318
+radius = 5.15276
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "moving",
-"speed": 2.0
+"speed": 5.0
 } ]
 
 [node name="Player" type="RigidBody2D"]
+position = Vector2( 5.05109, 0.698685 )
 scale = Vector2( 5, 5 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -23,9 +24,12 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2( 3, 3 )
+scale = Vector2( 5, 5 )
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.218387, -1.64569 )
+scale = Vector2( 3.12386, 2.92603 )
 frames = SubResource( 3 )
 animation = "moving"
+[connection signal="sleeping_state_changed" from="." to="." method="_on_Player_sleeping_state_changed"]

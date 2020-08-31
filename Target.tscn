@@ -12,18 +12,19 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 5.37574, 6.2971 )
+extents = Vector2( 43.6069, 35.2245 )
 
 [node name="Target" type="StaticBody2D"]
+position = Vector2( -4.23785, 4.23785 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="hit_animator" type="AnimatedSprite" parent="."]
+position = Vector2( 0.529739, -1.1919 )
+scale = Vector2( 8.01894, 5.52479 )
 frames = SubResource( 1 )
 animation = "hit_detected"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
-
-[node name="Area2D" type="Area2D" parent="."]
