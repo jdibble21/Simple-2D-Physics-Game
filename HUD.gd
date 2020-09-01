@@ -1,7 +1,7 @@
 extends CanvasLayer
 
+var angle
 
-# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
@@ -17,6 +17,6 @@ func _ready():
 
 
 func _on_AngleSlider_value_changed(value):
-	$AngleSlider.value = value
-	print('value changed!')
-	print($AngleSlider.value)
+	angle = value
+	
+

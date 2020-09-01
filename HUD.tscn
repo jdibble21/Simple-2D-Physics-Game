@@ -20,12 +20,22 @@ __meta__ = {
 [node name="AngleSlider" type="VSlider" parent="."]
 anchor_right = 0.016
 anchor_bottom = 0.027
-margin_left = 76.0
-margin_top = 50.0
-margin_right = 75.616
-margin_bottom = 140.8
+margin_left = 116.0
+margin_top = 20.0
+margin_right = 120.616
+margin_bottom = 122.8
 max_value = 15.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngleLabel" type="Label" parent="."]
+margin_left = 85.0283
+margin_top = 149.84
+margin_right = 166.028
+margin_bottom = 163.84
+text = "Adjust Angle"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -34,13 +34,6 @@ points = PoolVector2Array( 0, 0, 140, 0, 140, 140, 0, 140 )
 
 [node name="Level" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 78.749, 439.609 )
-scale = Vector2( 2, 2 )
-strength = 350.0
-
-[node name="HUD" parent="Player" instance=ExtResource( 5 )]
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 140, 140 )
@@ -52,3 +45,9 @@ position = Vector2( 720.452, 309.627 )
 
 [node name="Launcher" parent="." instance=ExtResource( 4 )]
 position = Vector2( 79.2854, 524.794 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 78.1759, 431.729 )
+angle = 5.0
+
+[node name="HUD" parent="Player" instance=ExtResource( 5 )]
