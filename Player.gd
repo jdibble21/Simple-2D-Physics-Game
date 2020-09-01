@@ -6,10 +6,8 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("launch"):
 		emit_signal("sleeping_state_changed")
-		print("FROM angleslider node")
-		print(get_node("HUD/AngleSlider").value)
+		strength = get_node("HUD/StrengthSlider").value
 		var vector_one = get_node("HUD/AngleSlider").value
-		print(vector_one)
 		var direction = Vector2(vector_one,-1).normalized()		
 		var velocity = direction * strength
 		apply_impulse(Vector2.ZERO,velocity)

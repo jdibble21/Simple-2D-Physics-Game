@@ -39,5 +39,28 @@ text = "Adjust Angle"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="StrengthSlider" type="VSlider" parent="."]
+margin_left = 236.0
+margin_top = 19.0
+margin_right = 252.0
+margin_bottom = 136.0
+min_value = 250.0
+max_value = 700.0
+value = 250.0
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StrengthLabel" type="Label" parent="."]
+margin_left = 197.408
+margin_top = 148.651
+margin_right = 295.408
+margin_bottom = 162.651
+text = "Adjust Strength"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="changed" from="AngleSlider" to="AngleSlider" method="_on_AngleSlider_changed"]
 [connection signal="value_changed" from="AngleSlider" to="." method="_on_AngleSlider_value_changed"]
