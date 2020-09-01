@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AngleSlider.gd" type="Script" id=1]
+[ext_resource path="res://HUD.gd" type="Script" id=2]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="GoalLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -63.5
+margin_right = 63.5
+margin_bottom = 14.0
+text = "Hit the white object"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngleSlider" type="VSlider" parent="."]
+anchor_right = 0.016
+anchor_bottom = 0.027
+margin_left = 76.0
+margin_top = 50.0
+margin_right = 75.616
+margin_bottom = 140.8
+max_value = 15.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="changed" from="AngleSlider" to="AngleSlider" method="_on_AngleSlider_changed"]
+[connection signal="value_changed" from="AngleSlider" to="." method="_on_AngleSlider_value_changed"]
