@@ -7,35 +7,56 @@ func _on_AngleSlider_value_changed(value):
 	#$AngleArrow.rotation_degrees = 90
 	if value == 0:
 		$AngleArrow.rotation_degrees = -90
+	if value == 0.25:
+		$AngleArrow.rotation_degrees = -86.25
+	if value == 0.5:
+		$AngleArrow.rotation_degrees = -82.5
+	if value == 0.75:
+		$AngleArrow.rotation_degrees = -78.75
 	if value == 1:
-		$AngleArrow.rotation_degrees = -84
+		$AngleArrow.rotation_degrees = -75
+	if value == 1.25:
+		$AngleArrow.rotation_degrees = -71.25
+	if value == 1.50:
+		$AngleArrow.rotation_degrees = -67.5
+	if value == 1.75:
+		$AngleArrow.rotation_degrees = -63.75
 	if value == 2:
-		$AngleArrow.rotation_degrees = -78
-	if value == 3:
-		$AngleArrow.rotation_degrees = -72
-	if value == 4:
-		$AngleArrow.rotation_degrees = -66
-	if value == 5:
 		$AngleArrow.rotation_degrees = -60
-	if value == 6:
-		$AngleArrow.rotation_degrees = -54
-	if value == 7:
-		$AngleArrow.rotation_degrees = -48
-	if value == 8:
-		$AngleArrow.rotation_degrees = -42
-	if value == 9:
-		$AngleArrow.rotation_degrees = -36
-	if value == 10:
+	if value == 2.25:
+		$AngleArrow.rotation_degrees = -56.25
+	if value == 2.50:
+		$AngleArrow.rotation_degrees = -52.5
+	if value == 2.75:
+		$AngleArrow.rotation_degrees = -48.75
+	if value == 3:
+		$AngleArrow.rotation_degrees = -45
+	if value == 3.25:
+		$AngleArrow.rotation_degrees = -41.25
+	if value == 3.50:
+		$AngleArrow.rotation_degrees = -37.5
+	if value == 3.75:
+		$AngleArrow.rotation_degrees = -33.75
+	if value == 4:
 		$AngleArrow.rotation_degrees = -30
-	if value == 11:
-		$AngleArrow.rotation_degrees = -24
-	if value == 12:
-		$AngleArrow.rotation_degrees = -18
-	if value == 13:
-		$AngleArrow.rotation_degrees = -12
-	if value == 14:
-		$AngleArrow.rotation_degrees = -6
-	if value == 15:
+	if value == 4.25:
+		$AngleArrow.rotation_degrees = -26.25
+	if value == 4.50:
+		$AngleArrow.rotation_degrees = -22.5
+	if value == 4.75:
+		$AngleArrow.rotation_degrees = -18.75
+	if value == 5:
+		$AngleArrow.rotation_degrees = -15
+	if value == 5.25:
+		$AngleArrow.rotation_degrees = -11.25
+	if value == 5.50:
+		$AngleArrow.rotation_degrees = -7.5
+	if value == 5.75:
+		$AngleArrow.rotation_degrees = -3.75
+	if value == 6:
 		$AngleArrow.rotation_degrees = 0
-
+	if value == 6.25:
+		$AngleArrow.rotation_degrees = 0
+	if value == 6.50:
+		$AngleArrow.rotation_degrees = 0
 #1.5708
