@@ -16,7 +16,7 @@ animations = [ {
 extents = Vector2( 43.6069, 35.2245 )
 
 [node name="Target" type="StaticBody2D"]
-position = Vector2( 2.3028, 2.15674 )
+position = Vector2( 8.18906, -12.9794 )
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true

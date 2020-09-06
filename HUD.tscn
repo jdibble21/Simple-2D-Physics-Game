@@ -15,7 +15,9 @@ margin_left = -63.5
 margin_right = 63.5
 margin_bottom = 14.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Hit the white object"
+text = "Hit the white object
+
+Press Space Bar to launch"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -27,7 +29,7 @@ margin_left = 116.0
 margin_top = 20.0
 margin_right = 120.616
 margin_bottom = 122.8
-max_value = 6.5
+max_value = 10.0
 step = 0.25
 script = ExtResource( 1 )
 __meta__ = {
